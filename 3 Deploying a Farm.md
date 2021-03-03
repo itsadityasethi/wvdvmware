@@ -146,9 +146,103 @@ Under Status, verify that the green dot is displayed to indicate that the farm h
 
 For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Create a Farm**.
 
+After you finish creating farms from the image, proceed to the next exercise to review RDS host power management.
+
+
 ## Exercise 2.2: Exploring RD Session Host Power Management
 
 Horizon Cloud Service provides power management capabilities for the Microsoft Azure servers, automatically powering hosts on and off and deallocating them as needed. You can see the results of setting up the farm that you just created by returning to Microsoft Azure.
 
-After you finish creating farms from the image, proceed to the next exercise to review RDS host power management.
+### Task 1: Verify in Microsoft Azure
 
+1. Return to the Microsoft Azure portal.
+
+2. Review the hosts that the farm automatically creates there.
+
+### Task 2: Automatic Shutdown or Deallocation
+
+
+You can set up automatic shutdown or deallocation of unused servers. 
+
+1. From the navigation bar, select **Virtual machines**.
+2. View the status showing each subscription as running or automatically deallocated.
+
+### Task 3: Automatic Creation of Resource Groups
+
+Horizon Cloud Service streamlines administration tasks, such as the automatic creation of resource groups, which contain all farm-related components. 
+
+1. From the navigation bar, select **Resource groups**.
+
+2. Click **Overview** to view resource group details.
+
+### Task 4: Automatic Definition of Network Security Group Rules
+
+Network security group rules are automatically defined.
+
+1. From the navigation bar, select More services.
+
+2. Select Network security groups.
+
+3. Select a group to view the security rules.
+
+For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html), and search the guide for **Applications in Your Horizon Cloud Inventory**.
+
+After you finish reviewing RDS host power management, proceed to the next exercise to add applications from the farm.
+
+## Exercise 1.3: Adding Applications from the Farm
+
+Horizon Cloud Service can auto-discover applications installed on the farm, or you can manually specify an application. Select the applications to be published, and assign them to end users or groups.
+
+### Task 1: Add New Applications
+
+1. In the Horizon Cloud Service Administration Console navigation bar, click **Inventory**.
+
+2. In the Inventory menu, select **Applications**.
+
+3. In the Applications window, click **New**.
+
+### Task 2: Select Auto-Scan from Farm
+
+In the New Application window, under Auto-Scan from Farm, click **Select**.
+
+
+### Task 3: Provide Definition Information
+
+1. In the New Application window, provide the Definition information:
+  - **Location:** Select a location from the pop-up menu.
+  - **Pod:** Select the pod containing the farm you want to choose.
+  - **Farm:** Select the farm.
+
+2. In the lower right corner, click **Next**.
+
+
+### Task 4: Select the Applications to Publish
+
+
+1. In the Applications tab, select the applications to be published.
+
+2. In the lower right corner, click **Next**.
+
+
+### Task 5: Provide Attributes
+
+
+1. In the Attributes tab, provide the appropriate attributes.
+
+2. In the lower right corner, click **Next**.
+
+
+### Task 6: Verify the Summary Information
+
+
+1. In the Summary tab, review to verify that the selections are correct and complete.
+2. In the lower right corner, click **Submit**.
+
+### Task 7: Verify Addition of New Applications
+
+
+In the Applications window, the green banner verifies that the new applications were added successfully, and the green dots indicate that each application is active.
+
+For more information, see [VMware Horizon Cloud Service on Microsoft Azure Administration Guide](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/index.html) and search the guide for **Importing New Applications from an RDSH Farm Using Auto-Scan from Farm**.
+
+After you finish adding applications from the farm, proceed to the next section to explore assigning desktops and applications to users and groups.
