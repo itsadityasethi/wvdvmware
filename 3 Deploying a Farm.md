@@ -33,8 +33,8 @@ When the new image has been published, you can use it to create farms.
   - **Description:** Enter an optional description to help identify the farm in the system.
   - **VM Names:** Enter a name for all server VMs created for this farm to which a number is appended, such as win2016-1, win2016-2, and so on. The name must start with a letter and can contain only letters, dashes, and numbers.
   - **Farm Type:** Specify the type of asset this farm provides to end users. Keep this assignment time in mind when you select the server size, since desktop assignments may require more capacity.
-      - ***Desktops:*** Provides session-based desktops
-      - ***Applications:*** Provides access to remote applications
+      - **Desktops:** Provides session-based desktops
+      - **Applications:** Provides access to remote applications
   - Location: Select the location from the list of pods in the pop-up menu.
   - Pod: Select the pod for this farm.
  
@@ -55,7 +55,7 @@ When the new image has been published, you can use it to create farms.
   - **Encrypt Disks:** For the purposes of this exercise, accept the default No. If you select Yes, the disks for all servers in this farm are encrypted. After the farm is published, encryption cannot be changed.
   - **NSX Cloud Managed:** For the purposes of this exercise, accept the default No. If you select Yes, NSX Cloud networking and security management is supported for this farm.
 
-2.Scroll to the **Farm Size** section.
+2. Scroll to the **Farm Size** section.
 
 
 ### Task 4: Set Farm Size
@@ -70,6 +70,7 @@ When the new image has been published, you can use it to create farms.
   
 2. In the lower left, click **Advanced Properties**.
 
+
 ### Task 5: Provide Advanced Properties
 
 1. Under **Advanced Properties**, provide the following information:
@@ -79,6 +80,7 @@ When the new image has been published, you can use it to create farms.
 For more information about these settings, see **Exercise 3.2: Explore RD Session Host Power Management**.
 
 2. In the lower right corner, click **Next**.
+
 
 ### Task 6: Provide Rolling Maintenance Information
 
@@ -117,6 +119,7 @@ For more information about these settings, see **Exercise 3.2: Explore RD Sessio
   - **Session Timeout Retrieval:** Leave blank.
 
 2. Scroll down to Schedule Power Management.
+
 
 ### Task 9: Schedule Power Management
 
@@ -159,6 +162,7 @@ Horizon Cloud Service provides power management capabilities for the Microsoft A
 
 2. Review the hosts that the farm automatically creates there.
 
+
 ### Task 2: Automatic Shutdown or Deallocation
 
 
@@ -167,6 +171,7 @@ You can set up automatic shutdown or deallocation of unused servers.
 1. From the navigation bar, select **Virtual machines**.
 2. View the status showing each subscription as running or automatically deallocated.
 
+
 ### Task 3: Automatic Creation of Resource Groups
 
 Horizon Cloud Service streamlines administration tasks, such as the automatic creation of resource groups, which contain all farm-related components. 
@@ -174,6 +179,7 @@ Horizon Cloud Service streamlines administration tasks, such as the automatic cr
 1. From the navigation bar, select **Resource groups**.
 
 2. Click **Overview** to view resource group details.
+
 
 ### Task 4: Automatic Definition of Network Security Group Rules
 
@@ -189,6 +195,7 @@ For more information, see [VMware Horizon Cloud Service on Microsoft Azure Admin
 
 After you finish reviewing RDS host power management, proceed to the next exercise to add applications from the farm.
 
+
 ## Exercise 1.3: Adding Applications from the Farm
 
 Horizon Cloud Service can auto-discover applications installed on the farm, or you can manually specify an application. Select the applications to be published, and assign them to end users or groups.
@@ -200,6 +207,7 @@ Horizon Cloud Service can auto-discover applications installed on the farm, or y
 2. In the Inventory menu, select **Applications**.
 
 3. In the Applications window, click **New**.
+
 
 ### Task 2: Select Auto-Scan from Farm
 
@@ -237,6 +245,7 @@ In the New Application window, under Auto-Scan from Farm, click **Select**.
 
 1. In the Summary tab, review to verify that the selections are correct and complete.
 2. In the lower right corner, click **Submit**.
+
 
 ### Task 7: Verify Addition of New Applications
 
